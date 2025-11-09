@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+	<meta charset="utf-8" />
+	<title>Foursite Email Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+	<p class="instructions">Instructions: Please input your name and the work order number. Click submit, then copy-paste the resulting paragraph into your email text editor!</p>
+
+<div class="field">
+  <label for="name"">Name</label>
+  <input 
+    id="name-input"
+    type="text"
+    placeholder="John Doe">
+    <span class="error" id="name-error"></span>
+</div>
+  
+<div class="field"
+  <label for="work-order-input">Work Order Number 
+    <span class="subtext">(Just the numbers after FKWD)</span>
+  </label>
+  <input 
+    id="work-order-input"
+    type="text"
+    placeholder="1234567"
+    required pattern="\d+" title="Numbers only">
+    <span class="error" id="wo-error"></span>
+</div>
+  
+<button id="submit-btn" class="btn">Submit!</button>
+
+<div id="output-container"></div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>

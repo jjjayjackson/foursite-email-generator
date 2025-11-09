@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #d3d3d3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.instructions {
+  max-width: 400px;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.5;
+}
+
+/* ==== EACH FIELD (label + input) ==== */
+.field {
+  display: flex;
+  flex-direction: column;     /* label on top, input below */
+  width: 300px;               /* <-- set the width of the whole field */
+  max-width: 100%;            /* responsive on small screens */
+  margin-bottom: 1rem;
+}
+
+/* ==== LABEL ==== */
+.field label {
+  margin-bottom: 0.35rem;
+  text-align: left;           /* left-align */
+  width: 100%;                /* forces label to match container width */
+  word-wrap: break-word;      /* long text wraps */
+}
+
+/* ==== INPUT ==== */
+.field input {
+  background-color:#d3d3d3;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;                /* fills the .field width */
+  box-sizing: border-box;     /* includes padding/border in width */
+}
+
+/* ---- NEW STYLES FOR RESULT ---- */
+#result {
+  background: #2a2a2a;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  white-space: pre-wrap;   /* keeps line-breaks */
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+#output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error {
+  color: #ff4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+  min-height: 1.2rem;
+}
+
+.btn {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .8rem;
+  min-width: 160px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #0055aa;
+}
+
+.subtext {
+  display: block;
+  font-size: 0.75rem;        /* smaller */
+  color: #aaaaaa;            /* subtle gray */
+  margin-top: 0.15rem;       /* tiny space below main label */
+  font-weight: normal;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;                    /* space between buttons */
+  justify-content: center;
+  flex-wrap: wrap;              /* stacks on small screens */
+  margin-top: 0.5rem;
+}
+
+.button-group .btn {
+  flex: 1;                      /* both buttons same width */
+  min-width: 140px;             /* prevents them from getting too narrow */
+}
