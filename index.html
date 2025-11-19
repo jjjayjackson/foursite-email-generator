@@ -10,7 +10,7 @@
 	<p class="instructions">Instructions: Please input your name and the work order number. Click submit, then either copy-paste the resulting paragraph into your email text editor or send the email directly!</p>
 
 <div class="field">
-  <label for="name"">Name</label>
+  <label for="name">Name</label>
   <input 
     id="name-input"
     type="text"
@@ -18,16 +18,14 @@
     <span class="error" id="name-error"></span>
 </div>
   
-<div class="field"
-  <label for="work-order-input">Work Order Number 
-    <span class="subtext">(Just the numbers after FKWD)</span>
-  </label>
+<div class="field">
+  <label for="work-order-input">Work Order Number</label>
+  <span class="subtext">(Just the numbers after FKWD)</span>
   <input 
     id="work-order-input"
     type="text"
-    placeholder="1234567"
-    required pattern="\d+" title="Numbers only">
-    <span class="error" id="wo-error"></span>
+    placeholder="1234567">
+    <span class="error" id="work-error"></span>
 </div>
   
 <button id="submit-btn" class="btn">Submit!</button>
