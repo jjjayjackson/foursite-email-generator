@@ -108,7 +108,7 @@ ${name}`;
     emailBtn.className = 'btn';
     emailBtn.textContent = 'Email It!';
     emailBtn.addEventListener('click', () => {
-      const recipient = 'michele.ross@fourtsiteinc.com';
+      const recipient = 'michele.XXXX@fourtsiteinc.com';
       const subject   = 'Gurney Work Order';
       const deeplink  = `https://outlook.office.com/mail/deeplink/compose?to=${encodeURIComponent(recipient)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(paragraph)}`;
       window.open(deeplink, '_blank');
