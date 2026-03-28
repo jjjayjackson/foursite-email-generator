@@ -73,7 +73,7 @@ I have a bed that needs to be picked up.
 
 Name: ${name}
 Department: Emergency; Number: 100
-Contact Phone Number: (408) 851 - 1000
+Contact Phone Number: (408) XXX - XXXX (phone number scrubbed for privacy reasons)
 Pickup Location: ED Sim Lab
 Work Order Number: FKWD${wo}
 
